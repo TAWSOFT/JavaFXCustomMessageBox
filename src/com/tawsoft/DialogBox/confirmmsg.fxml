@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="131.5" minWidth="321.53106689453125" prefHeight="131.5" prefWidth="321.53106689453125" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.tawsoft.DialogBox.ConfirmmsgController">
+  <children>
+    <ImageView fitHeight="200.39085038881217" fitWidth="321.5310974121094" layoutX="0.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="/Resources/msgbox.jpeg" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="56.0" fitWidth="74.66666861756207" layoutX="25.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="/Resources/confirmationIcon.png" />
+      </image>
+    </ImageView>
+    <Label fx:id="lblbody" layoutX="111.0" layoutY="44.0" text="Are you Sure to" textFill="#52ff00" />
+    <Button fx:id="btnYes" layoutX="89.0" layoutY="89.0" mnemonicParsing="false" onAction="#onbtnYes" text="Yes" />
+    <Button fx:id="btnNo" layoutX="188.0" layoutY="89.0" mnemonicParsing="false" onAction="#onbtnNo" text="No" />
+  </children>
+</AnchorPane>
