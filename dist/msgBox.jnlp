@@ -12,7 +12,7 @@
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
     <jar href="lib/javafx-dialogs-0.0.3.jar" size="118212" download="eager" />
-    <jar href="msgBox.jar" size="36395" download="eager" />
+    <jar href="msgBox.jar" size="36612" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="msgBox" >
     <param name="requiredFXVersion" value="2.2+"/>

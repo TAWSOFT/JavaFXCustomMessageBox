@@ -9,6 +9,7 @@ import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
@@ -28,33 +29,23 @@ public class Dialogmsg {
         stage.setScene(scene);
         stage.show();
     }
-    public static String confirmmsg( String msgBody) throws IOException {
+    public static void confirmmsg( String msgBody) throws IOException, InterruptedException {
 
-        String a = null;
         
         DialogData.dbodyto= msgBody;
         AnchorPane pane = (AnchorPane) FXMLLoader.load(Dialogmsg.class.getResource("/com/tawsoft/DialogBox/confirmmsg.fxml"));
         Scene scene = new Scene(pane);
         Stage stage = new Stage();
         stage.setScene(scene);
-        stage.show();
-        
-        return a; 
-
-    }
-       public static void confirmmsgrst( ) throws IOException {
-
-
-        
-     
-        AnchorPane pane = (AnchorPane) FXMLLoader.load(Dialogmsg.class.getResource("/com/tawsoft/DialogBox/confirmmsg.fxml"));
-        Scene scene = new Scene(pane);
-        Stage stage = new Stage();
-        stage.setScene(scene);
+        stage.initOwner(stage);
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.requestFocus();
         stage.show();
        
+        
+       // return a; 
 
     }
-    
+
     
 }

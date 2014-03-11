@@ -39,13 +39,12 @@ public class MainFormController implements Initializable {
         // TODO
     }    
     
-    public void onbtnShow(ActionEvent event) throws IOException{
+    public void onbtnShow(ActionEvent event) throws IOException, InterruptedException{
        
-       Dialogmsg.infomsg("Title","msgBody");
+       //Dialogmsg.infomsg("Title","msgBody");
        Dialogmsg.confirmmsg("Delete");
-     
-        
-      
+    
+
     }
     
 }
